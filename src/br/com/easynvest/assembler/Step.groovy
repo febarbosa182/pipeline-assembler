@@ -9,8 +9,8 @@ class Step{
         this.stepName = stepName;
     }
 
-    def execStep(context, jobParams){
-        stepObject.call(context, jobParams)
+    def execStep(context){
+        stepObject.call(context)
     }
 
     def getName(){

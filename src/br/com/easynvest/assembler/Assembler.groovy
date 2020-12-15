@@ -7,21 +7,21 @@ import br.com.easynvest.assembler.technologies.TechnologiesInterface
 class Assembler{
     TechnologiesInterface technology
 
-    def compose(jenkins, jobParams) {
+    def compose(jenkins) {
         jenkins.echo "Pipeline Assemble!"
 
         technology = TechnologiesInstance
-                .valueOf(jobParams.techType.toUpperCase())
+                .valueOf(jenkins.env.TECH_TYPE.toUpperCase())
                     .getTechnologiesInstance()
 
-        technology.fillSteps(jenkins, jobParams)
+        technology.fillSteps(jenkins)
 
     }
 
-    def runSteps(jenkins, jobParams) {
+    def runSteps(jenkins) {
         technology.stepList.each{
             jenkins.stage(it.getName()){
-                it.execStep(jenkins, jobParams)
+                it.execStep(jenkins)
             }
         }
     }

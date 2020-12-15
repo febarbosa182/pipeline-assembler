@@ -32,11 +32,11 @@ class Node extends Common implements TechnologiesInterface, Serializable{
     // CD STEPS FOR BRANCH MASTER
     final StepModel[] cdMaster = []
 
-    def fillSteps (jenkins, jobParams) {
+    def fillSteps (jenkins) {
 
         StepModel[] currentPipe
 
-        switch( jobParams.repoBranch ) {
+        switch( jenkins.env.REPO_BRANCH ) {
             case ~/^develop/:
                 currentPipe = ciSteps + cdDevelop
                 break
