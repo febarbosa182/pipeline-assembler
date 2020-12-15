@@ -13,7 +13,7 @@ class DotnetCore extends Common implements TechnologiesInterface, Serializable{
             identifier: 'checkout',
             stepName: 'Checkout',
             urlRepo: 'https://github.com/febarbosa182/pipestep-checkout.git',
-            branch: 'master',
+            branch: 'main',
             instanceClass: 'br.com.easynvest.checkout.Checkout'
         ]
     ]

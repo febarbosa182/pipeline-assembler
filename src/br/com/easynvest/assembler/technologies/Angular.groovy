@@ -12,28 +12,28 @@ class Angular extends Common implements TechnologiesInterface, Serializable{
             identifier: 'checkout',
             stepName: 'Checkout',
             urlRepo: 'https://github.com/febarbosa182/pipestep-checkout.git',
-            branch: 'master',
+            branch: 'main',
             instanceClass: 'br.com.easynvest.checkout.Checkout'
         ],
         [
             identifier: 'dependencies',
             stepName: 'Dependencies',
             urlRepo: 'https://github.com/febarbosa182/pipestep-dependencies-angular.git',
-            branch: 'master',
+            branch: 'main',
             instanceClass: 'br.com.easynvest.dependencies.Dependencies'
         ],
         [
             identifier: 'build',
             stepName: 'Build',
             urlRepo: 'https://github.com/febarbosa182/pipestep-build-angular.git',
-            branch: 'master',
+            branch: 'main',
             instanceClass: 'br.com.easynvest.build.Build'
         ],
         [
             identifier: 'buildpublish',
             stepName: 'Docker Build and Publish',
             urlRepo: 'https://github.com/febarbosa182/pipestep-docker-build-and-publish.git',
-            branch: 'master',
+            branch: 'main',
             instanceClass: 'br.com.easynvest.docker.BuildAndPublish'
         ]
     ]
