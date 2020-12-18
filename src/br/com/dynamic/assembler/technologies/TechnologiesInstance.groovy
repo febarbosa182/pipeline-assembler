@@ -1,9 +1,9 @@
-package br.com.easynvest.assembler.technologies
+package br.com.dynamic.assembler.technologies
 
-import br.com.easynvest.assembler.technologies.Angular
-import br.com.easynvest.assembler.technologies.DotnetCore
-import br.com.easynvest.assembler.technologies.Node
-import br.com.easynvest.assembler.technologies.TechnologiesInterface
+import br.com.dynamic.assembler.technologies.Angular
+import br.com.dynamic.assembler.technologies.DotnetCore
+import br.com.dynamic.assembler.technologies.Node
+import br.com.dynamic.assembler.technologies.TechnologiesInterface
 
 enum TechnologiesInstance{
     ANGULAR(Angular.class),

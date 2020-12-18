@@ -1,7 +1,7 @@
-package br.com.easynvest.assembler.technologies
+package br.com.dynamic.assembler.technologies
 
-import br.com.easynvest.assembler.Step
-import br.com.easynvest.assembler.StepModel
+import br.com.dynamic.assembler.Step
+import br.com.dynamic.assembler.StepModel
 import java.util.regex.Matcher
 
 class Angular extends Common implements TechnologiesInterface, Serializable{
@@ -13,28 +13,28 @@ class Angular extends Common implements TechnologiesInterface, Serializable{
             stepName: 'Checkout',
             urlRepo: 'https://github.com/febarbosa182/pipestep-checkout.git',
             branch: 'main',
-            instanceClass: 'br.com.easynvest.checkout.Checkout'
+            instanceClass: 'br.com.dynamic.checkout.Checkout'
         ],
         [
             identifier: 'dependencies',
             stepName: 'Dependencies',
             urlRepo: 'https://github.com/febarbosa182/pipestep-dependencies-angular.git',
             branch: 'main',
-            instanceClass: 'br.com.easynvest.dependencies.Dependencies'
+            instanceClass: 'br.com.dynamic.dependencies.Dependencies'
         ],
         [
             identifier: 'build',
             stepName: 'Build',
             urlRepo: 'https://github.com/febarbosa182/pipestep-build-angular.git',
             branch: 'main',
-            instanceClass: 'br.com.easynvest.build.Build'
+            instanceClass: 'br.com.dynamic.build.Build'
         ],
         [
             identifier: 'buildpublish',
             stepName: 'Docker Build and Publish',
             urlRepo: 'https://github.com/febarbosa182/pipestep-docker-build-and-publish.git',
             branch: 'main',
-            instanceClass: 'br.com.easynvest.docker.BuildAndPublish'
+            instanceClass: 'br.com.dynamic.docker.BuildAndPublish'
         ]
     ]
 

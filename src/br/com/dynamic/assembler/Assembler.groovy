@@ -1,8 +1,8 @@
-package br.com.easynvest.assembler
+package br.com.dynamic.assembler
 
-import br.com.easynvest.assembler.Step
-import br.com.easynvest.assembler.technologies.TechnologiesInstance
-import br.com.easynvest.assembler.technologies.TechnologiesInterface
+import br.com.dynamic.assembler.Step
+import br.com.dynamic.assembler.technologies.TechnologiesInstance
+import br.com.dynamic.assembler.technologies.TechnologiesInterface
 
 class Assembler{
     TechnologiesInterface technology

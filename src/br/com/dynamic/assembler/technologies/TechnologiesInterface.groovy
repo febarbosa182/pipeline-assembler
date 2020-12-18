@@ -1,4 +1,4 @@
-package br.com.easynvest.assembler.technologies
+package br.com.dynamic.assembler.technologies
 
 interface TechnologiesInterface{
     def stepList

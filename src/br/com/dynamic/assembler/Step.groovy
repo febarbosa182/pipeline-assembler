@@ -1,4 +1,4 @@
-package br.com.easynvest.assembler
+package br.com.dynamic.assembler
 
 class Step{
     def stepObject;

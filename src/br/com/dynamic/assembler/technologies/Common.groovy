@@ -1,6 +1,6 @@
-package br.com.easynvest.assembler.technologies
+package br.com.dynamic.assembler.technologies
 
-import br.com.easynvest.assembler.Step
+import br.com.dynamic.assembler.Step
 
 class Common {
   def loadLibrary(context, String identifier, String urlRepo, String branch){
