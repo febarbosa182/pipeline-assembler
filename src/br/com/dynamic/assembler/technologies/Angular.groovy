@@ -50,8 +50,16 @@ class Angular extends Common implements TechnologiesInterface, Serializable{
     // CD STEPS FOR BRANCH QA
     final StepModel[] cdQa = []
 
-    // CD STEPS FOR BRANCH MASTER
-    final StepModel[] cdMaster = []
+    // CD STEPS FOR BRANCH MASTER/MAIN
+    final StepModel[] cdMaster = [
+        [
+            identifier: 'deploy',
+            stepName: 'Deploy Helm Chart',
+            urlRepo: 'https://github.com/febarbosa182/pipestep-helm-deploy.git',
+            branch: 'main',
+            instanceClass: 'br.com.dynamic.deploy.Deploy'
+        ]
+    ]
 
     def fillSteps (jenkins) {
 
@@ -68,6 +76,9 @@ class Angular extends Common implements TechnologiesInterface, Serializable{
                 currentPipe = ciSteps.plus(cdRelease)
                 break
             case ~/^master/:
+                currentPipe = ciSteps.plus(cdMaster)
+                break
+            case ~/^main/:
                 currentPipe = ciSteps.plus(cdMaster)
                 break
             default:
