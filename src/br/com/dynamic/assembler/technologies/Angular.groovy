@@ -12,28 +12,28 @@ class Angular extends Common implements TechnologiesInterface, Serializable{
             identifier: 'checkout',
             stepName: 'Checkout',
             urlRepo: 'https://github.com/febarbosa182/pipestep-checkout.git',
-            branch: 'main',
+            branch: 'v1.0.0',
             instanceClass: 'br.com.dynamic.checkout.Checkout'
         ],
         [
             identifier: 'dependencies',
             stepName: 'Dependencies',
             urlRepo: 'https://github.com/febarbosa182/pipestep-dependencies-angular.git',
-            branch: 'main',
+            branch: 'v1.0.0',
             instanceClass: 'br.com.dynamic.dependencies.Dependencies'
         ],
         [
             identifier: 'build',
             stepName: 'Build',
             urlRepo: 'https://github.com/febarbosa182/pipestep-build-angular.git',
-            branch: 'main',
+            branch: 'v1.0.0',
             instanceClass: 'br.com.dynamic.build.Build'
         ],
         [
             identifier: 'buildpublish',
             stepName: 'Docker Build and Publish',
             urlRepo: 'https://github.com/febarbosa182/pipestep-docker-build-and-publish.git',
-            branch: 'main',
+            branch: 'v1.0.0',
             instanceClass: 'br.com.dynamic.docker.BuildAndPublish'
         ]
     ]
@@ -56,7 +56,7 @@ class Angular extends Common implements TechnologiesInterface, Serializable{
             identifier: 'deploy',
             stepName: 'Deploy Helm Chart',
             urlRepo: 'https://github.com/febarbosa182/pipestep-helm-deploy.git',
-            branch: 'main',
+            branch: 'v1.0.0',
             instanceClass: 'br.com.dynamic.deploy.Deploy'
         ]
     ]
