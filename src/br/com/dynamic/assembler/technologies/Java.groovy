@@ -33,7 +33,7 @@ class Java extends Common implements TechnologiesInterface, Serializable{
             identifier: 'buildpublish',
             stepName: 'Docker Build and Publish',
             urlRepo: 'https://github.com/febarbosa182/pipestep-docker-build-and-publish.git',
-            branch: 'v1.0.0',
+            branch: 'orange',
             instanceClass: 'br.com.dynamic.docker.BuildAndPublish'
         ]
     ]
