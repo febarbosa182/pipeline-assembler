@@ -29,13 +29,13 @@ class Java extends Common implements TechnologiesInterface, Serializable{
             branch: 'v1.0.0',
             instanceClass: 'br.com.dynamic.build.Build'
         ],
-        [
-            identifier: 'buildpublish',
-            stepName: 'Docker Build and Publish',
-            urlRepo: 'https://github.com/febarbosa182/pipestep-docker-build-and-publish.git',
-            branch: 'orange',
-            instanceClass: 'br.com.dynamic.docker.BuildAndPublish'
-        ]
+        // [
+        //     identifier: 'buildpublish',
+        //     stepName: 'Docker Build and Publish',
+        //     urlRepo: 'https://github.com/febarbosa182/pipestep-docker-build-and-publish.git',
+        //     branch: 'orange',
+        //     instanceClass: 'br.com.dynamic.docker.BuildAndPublish'
+        // ]
     ]
 
     // CD STEPS FOR BRANCH DEVELOP
