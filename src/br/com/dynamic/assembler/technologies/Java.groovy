@@ -56,7 +56,7 @@ class Java extends Common implements TechnologiesInterface, Serializable{
             identifier: 'deploy',
             stepName: 'Deploy Helm Chart',
             urlRepo: 'https://github.com/febarbosa182/pipestep-helm-deploy.git',
-            branch: 'v1.0.0',
+            branch: 'orange',
             instanceClass: 'br.com.dynamic.deploy.Deploy'
         ]
     ]
